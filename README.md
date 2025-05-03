@@ -16,12 +16,9 @@ You will also help collect address data from various sources, which will be used
   - Urban and rural addresses
   - Address from different regions and states
   - Full and partial address
-  - With and without postal codes
 - Record them in the provided spreadsheet with these columns:
   - `Data Source`
   - `Original Address`
-  - `Expected City`
-  - `Expected State`
   - `Notes`
 
 - Use trusted sources such as:
@@ -32,17 +29,19 @@ You will also help collect address data from various sources, which will be used
 ### 2. Testing Tasks
 You will use the mm_geo_coder Python module to test:
 - Geocoding (address → coordinates)
-- Reverse Geocoding (coordinates → address)
 - Issues when invalid input is provided
 - Module's handling of missing or partial data
 - Upload bulk address data (CSV format)
 - Compare system outputs with expected results
 
-### 3. 🧰 Tools You'll Use
-- Test Environment: [UAT URL or app link]
-- Spreadsheet Template: [Link or file name: mm_geo_coder_UAT_log.xlsx]
-- Bug Reporting: [GitHub Issues]
-- Reference Tools: Google Maps, OpenStreetMap, MIMU databases
+### 3. 🧰 Tools and Reference
+| Tool                    | Purpose                                            |
+| ----------------------- | ------------------------------------------ ----    |
+| 🧪 UAT/Test Environment | \[https://github.com/myothida/mm_geo_coder_UAT]    |
+| 📊 Spreadsheet Template | `mm_geo_coder_UAT_log.xlsx`                        |
+| 🐞 Bug Reporting        | GitHub Issues (this repo)                          |
+| 🔍 Reference            | Google Maps, OpenStreetMap, MIMU databases         |
+
 
 ### 4. ✅ What We Expect
 - Minimum 90% completion rate of test cases assigned to you
