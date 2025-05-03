@@ -1,0 +1,43 @@
+name: Bug Report
+description: Report a bug found during UAT testing
+labels: [bug, UAT]
+body:
+  - type: input
+    id: test-id
+    attributes:
+      label: Test ID
+      description: The ID from your test spreadsheet (e.g., T042)
+      placeholder: T042
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what went wrong or what you observed
+  - type: input
+    id: input
+    attributes:
+      label: Input Used
+      description: The address or coordinates you tested
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Output
+      description: What did you expect to happen?
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Output
+      description: What did the system return?
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Low (Cosmetic or minor issue)
+        - Medium (Incorrect result but system works)
+        - High (Incorrect logic or broken feature)
+  - type: input
+    id: screenshot
+    attributes:
+      label: Screenshot URL (optional)
+      description: Upload screenshot and paste the link here
