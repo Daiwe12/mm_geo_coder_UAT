@@ -35,12 +35,15 @@ You will use the mm_geo_coder Python module to test:
 - Compare system outputs with expected results
 
 ### 3. 🧰 Tools and Reference
-| Tool                    | Purpose                                            |
-| ----------------------- | ------------------------------------------ ----    |
-| 🧪 UAT/Test Environment | \[https://github.com/myothida/mm_geo_coder_UAT]    |
-| 📊 Spreadsheet Template | `mm_geo_coder_UAT_log.xlsx`                        |
-| 🐞 Bug Reporting        | GitHub Issues (this repo)                          |
-| 🔍 Reference            | Google Maps, OpenStreetMap, MIMU databases         |
+
+| Tool                    | Purpose                                       |
+|-------------------------|-----------------------------------------------|
+| 🧪 UAT/Test Environment | [https://github.com/myothida/mm_geo_coder_UAT]             |
+| 📊 Spreadsheet Template | `mm_geo_coder_UAT_log.xlsx`                  |
+| 🐞 Bug Reporting        | GitHub Issues (this repository)              |
+| 🔍 Reference Maps       | Google Maps, OpenStreetMap, MIMU Databases   |
+
+
 
 
 ### 4. ✅ What We Expect
