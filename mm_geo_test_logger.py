@@ -1,3 +1,22 @@
+"""
+mm_geo_test_logger.py
+
+Bulk testing utility for the MMGeoCoder geocoding module.
+Reads addresses from a CSV or Excel file, runs geocoding, logs results and errors,
+and outputs a detailed report in CSV or Excel format.
+
+Usage:
+    python mm_geo_test_logger.py --input <input_file.csv> --output <output_file.xlsx>
+
+Arguments:
+    --input   Path to input CSV/Excel file inside 'data/' folder.
+    --output  Path to output file, saved in 'result/' folder.
+
+Functions:
+    classify_error: Classifies error types from geocoder results or exceptions.
+    get_location:   Runs geocoding for a single address and returns results.
+    run_bulk_geocode: Processes all addresses, logs results, and saves the report.
+"""
 import argparse
 import os
 import pandas as pd
@@ -141,9 +160,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Bulk Test mm_geo_coder with Address CSV")
     parser.add_argument('--input', required=True, help="Path to input CSV file inside 'data/' folder")
     parser.add_argument('--output', required=True, help="Path to output file, will be saved in 'result/' folder")
-
     args = parser.parse_args()
-
     # Enforce input from ./data/ and output to ./result/
     input_path = os.path.abspath(os.path.join("data", args.input))
     output_path = os.path.abspath(os.path.join("result", args.output))
